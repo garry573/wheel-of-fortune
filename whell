@@ -1,0 +1,13 @@
+// Creating an array with elements that will be on the wheel of fortune
+const wheelOptions = ["Prize 1", "Prize 2", "Prize 3", "Prize 4", "Prize 5"];
+
+// Function to select a random element from the array
+function spinWheel() {
+    // Generating a random index
+    const randomIndex = Math.floor(Math.random() * wheelOptions.length);
+    // Returning the element corresponding to the random index
+    return wheelOptions[randomIndex];
+}
+
+// Calling the function and outputting the result
+console.log("Spin result: ", spinWheel());
